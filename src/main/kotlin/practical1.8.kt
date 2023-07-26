@@ -31,4 +31,35 @@ fun main(){
         intArrayOf(5, 6)
     )
     println(Arrays.deepToString(arr6))
+    val arrList = ArrayList<Int>()
+    for (i in 0..5) {
+        print("arr[$i]: ")
+        val element = readLine()!!.toInt()
+        arrList.add(element)
+    }
+    val arrayString = arrList.joinToString(prefix = "arr[", postfix = "]")
+    println("Entered Array:")
+    println(arrayString)
+    println("************Before Sorting With Built-in Function**************")
+    println(arr5.joinToString())
+    //Sort
+    arr5.sort()
+    println("************After Sorting With Built-in Function**************")
+    println(arr5.joinToString())
+    println("************Before Sorting Without Built-in Function**************")
+    println(arr3.joinToString())
+    for(i in 0 until arr3.size)
+    {
+        for(j in i+1 until arr3.size)
+        {
+            if(arr3[i]<arr3[j])
+            {
+                arr3[j]=arr3[j]+arr3[i]
+                arr3[i]=arr3[j]-arr3[i]
+                arr3[j]=arr3[j]-arr3[i]
+            }
+        }
+    }
+    println("************After Sorting Without Built-in Function**************")
+    println(arr3.joinToString())
 }

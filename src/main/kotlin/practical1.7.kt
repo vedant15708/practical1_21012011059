@@ -1,8 +1,15 @@
-fun main() {
-    val number = 5
-    println("Factorial of $number = ${factorial(number)}")
+fun main(){
+    print("Enter the number:")
+    var number= readLine()!!.toInt()
+    var ans=factorial(number)
+    println("factorial:"+ans)
 }
 
-tailrec fun factorial(n: Int, run: Int = 1): Long {
-    return if (n == 1) run.toLong() else factorial(n - 1, run * n)
+fun factorial(number:Int):Int{
+    if (number==1 || number==0) {
+        return 1
+    }
+    else{
+        return number*factorial(number-1)
+    }
 }
