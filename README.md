@@ -15,7 +15,7 @@
 <img src="https://github.com/vedant15708/practical1_21012011059/assets/98215447/b1d47992-a62b-4655-8826-01ec04ff39c5" width=20% height=20%>
 
 6. By using a user defined function perform all arithmetic operations.
-<img src="https://github.com/vedant15708/practical1_21012011059/assets/98215447/d11835f4-8dd6-4e98-b77e-8946598993d0" width=20% height=20%>
+<img src="https://github.com/vedant15708/practical1_21012011059/assets/98215447/d11835f4-8dd6-4e98-b77e-8946598993d0" width=40% height=40%>
 
 7. Find the factorial of number by recursion. Explain "tailrec" keyword.
 <img src="https://github.com/vedant15708/practical1_21012011059/assets/98215447/b348e7e7-b7ac-4e69-b0fa-da6c221b8d68" width=20% height=20%>
