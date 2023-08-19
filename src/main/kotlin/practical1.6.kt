@@ -1,19 +1,16 @@
-fun ArithmeticOperation(operator:Char,operand1:Double,operand2:Double):Double{
-    return when (operator){
-        '+' -> operand1+operand2
-        '-' -> operand1-operand2
-        '*' -> operand1*operand2
-        '/' -> operand1/operand2
-        else -> throw IllegalArgumentException("Error: Invalid operator.")
-    }
+fun arithmetic(n1:Int,n2:Int,n3:Int)
+{
+    var result:Int
+    result = n1 + n2+n3
+    println("Addition of $n1,$n2,$n3 is $result")
+    result = n1 - n2-n3
+    println("Substraction of $n1,$n2,$n3 is $result")
+    result = n1 * n2*n3
+    println("Multiplication of $n1,$n2,$n3 is $result")
+    result = n2 /n1
+    println("Division of $n1,$n2 is $result")
 }
-fun main(){
-    print("Enter the first number:")
-    val operand1 = readLine()?.trim()!!.toDouble()
-    print("Enter the second number:")
-    val operand2 = readLine()?.trim()!!.toDouble()
-    print("Enter the operator(+,-,*,/):")
-    val operator = readLine()!![0]
-    val result = ArithmeticOperation(operator,operand1,operand2)
-    println("Result:$result")
+fun main()
+{
+    arithmetic(111,2222,-222)
 }
