@@ -8,9 +8,9 @@ fun arithmetic(n1:Int,n2:Int,n3:Int)
     result = n1 * n2*n3
     println("Multiplication of $n1,$n2,$n3 is $result")
     result = n2 /n1
-    println("Division of $n1,$n2 is $result")
+    println("Division of $n2,$n1 is $result")
 }
 fun main()
 {
-    arithmetic(111,2222,-222)
+    arithmetic(125,5353,-245)
 }
